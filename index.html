@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive website showcasing services with accessible navigation">
+    <meta name="keywords" content="services, responsive design, accessible website">
+    <meta name="author" content="Jon Noel Oliveros">
+    <title>Simple Responsive Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- Font Awesome for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Logo</div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                        <li><a href="#development">Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading">
+            <h1>My Services</h1>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <figure>
+                    <div class="img-box">
+                        <img src="images/service1.webp" alt="Web Analytics Dashboard" loading="lazy">
+                    </div>
+                    <figcaption class="card-content">
+                        <h3 class="card-title">Analytics</h3>
+                        <p class="card-text">Track user behavior, monitor performance metrics, and gain valuable
+                            insights to optimize your web presence.</p>
+                        <a href="/analytics" class="card-btn">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <div class="img-box">
+                        <img src="images/service2.webp" alt="Digital Marketing Strategy" loading="lazy">
+                    </div>
+                    <figcaption class="card-content">
+                        <h3 class="card-title">Marketing</h3>
+                        <p class="card-text">Boost your online presence with targeted campaigns, SEO optimization, and
+                            data-driven marketing strategies.</p>
+                        <a href="/marketing" class="card-btn">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <div class="img-box">
+                        <img src="images/service3.webp" alt="Web Development and Programming" loading="lazy">
+                    </div>
+                    <figcaption class="card-content">
+                        <h3 class="card-title">Development</h3>
+                        <p class="card-text">Create robust, scalable web solutions using modern technologies and best
+                            practices for optimal performance.</p>
+                        <a href="/development" class="card-btn">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> Jon Noel Oliveros. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
