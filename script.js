@@ -27,3 +27,6 @@ document.addEventListener('click', (e) => {
         });
     }
 }); 
+
+// Current Year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
